@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "com.aalasolutions.apps.cricketlivescores"
+        minSdkVersion 15
+        targetSdkVersion 14
+        versionCode 7
+        versionName '1.0.7'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    productFlavors {
+    }
+}
+repositories {
+    maven {
+        url 'https://raw.github.com/zeeshanejaz/unirest-android/mvn-repo'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'org.jsoup:jsoup:1.8.1'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.02.02'
+    compile 'com.google.android.gms:play-services:6.5.87'
+}

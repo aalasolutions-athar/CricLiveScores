@@ -1,0 +1,23 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarStyle">@style/ActionBar</item>
+
+    </style>
+
+    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/accent_red</item>
+        <item name="android:backgroundStacked">@color/stacked_red</item>
+        <item name="android:backgroundSplit">@color/accent_red</item>
+        <item name="background">@color/accent_red</item>
+        <item name="backgroundStacked">@color/stacked_red</item>
+        <item name="backgroundSplit">@color/accent_red</item>
+        <!--<item name="android:icon">@drawable/cric</item>-->
+        <!--<item name="icon">@drawable/cric</item>-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/cric</item>-->
+        <!--<item name="homeAsUpIndicator">@drawable/cric</item>-->
+        <!-- Support library compatibility -->
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ffff2300"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="0.85"
+        android:background="@android:color/transparent"
+        android:onClick="backButtonPressed"
+        android:src="@drawable/ic_action_back" />
+
+    <TextView
+        android:id="@+id/tv_actionbar_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.15"
+        android:gravity="left|fill_vertical"
+        android:text="Live Scores"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+</LinearLayout>
